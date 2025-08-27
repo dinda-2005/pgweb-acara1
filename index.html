@@ -5,6 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acara 1 | HTML CSS</title>
+
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('images/Temanggung Peta B.png'); 
+      background-size: cover;       
+      background-position: center;  
+      background-attachment: fixed; 
+      color: #222;                  
+    }
+
+    .overlay {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+    }
+
+  </style>
 </head>
 
 <body>
@@ -12,7 +30,7 @@
     <h1 style="color:brown;">Kabupaten Temanggung</h1>
 
     <!--    Sub Judul -->
-    <h3>Jawa Tengah</h3>
+    <h3 style="color:chocolate;">Jawa Tengah</h3>
     <hr>
     <p>Kabupaten Temanggung dikenal sebagai "Kota Tembakau" karena komoditas ini menjadi sumber kekayaan utamanya,
         menghasilkan varietas unggul seperti Kemloko yang diminati industri rokok nasional. Kekayaan lain meliputi kopi,
@@ -33,7 +51,8 @@
     <hr>
 
     <!-- Table -->
-    <table>
+      <h3 style="color:chocolate;">Jumlah Penduduk</h3>
+    <table border="1" width=100%>
         <tr>
             <th>Nomor</th>
             <th>Jenis Kelamin</th>
@@ -56,8 +75,8 @@
         </tr>
     </table>
     <!-- List Kecamatan -->
-     
-    <h4>Kecamatan</h4>
+     <hr>
+    <h4 style="color:chocolate;">Kecamatan</h4>
     <ol>
         <li>Bansari</li>
         <li> Bejen</li>
@@ -80,6 +99,41 @@
         <li> Tretep</li>
         <li> Wonoboyo</li>
     </ol>
+    <!-- Link ke portal resmi -->
+    <p>
+    <hr>
+    <h3 style="color:chocolate;">Link Portal</h3>
+        Kunjungi portal resmi Kabupaten Temanggung di sini:  
+        <a href="https://temanggungkab.go.id" target="_blank">Portal Kabupaten Temanggung</a>
+    </p>
+    <hr>
+    <!-- Gambar dengan directory penyimpanan -->
+    <h3 style="color:chocolate;">Gambar Temanggung</h3>
+    <img src="images/Temanggung.jpg" alt="Pemandangan Kabupaten Temanggung" width="500">
+    <hr>
+    <!-- Gambar dengan directory penyimpanan -->
+    <h3 style="color:chocolate;">Video YouTube</h3>
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/0GAnIMNL0Uk" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+    </iframe>
+    <hr>
+    <h3 style="color:chocolate;">Kritik dan Saran</h3>
+    <form action="#" method="post" style="border:1px solid #ccc; padding:15px; width:400px;">
+        <label for="nama">Nama:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="pesan">Kritik dan Saran:</label><br>
+        <textarea id="pesan" name="pesan" rows="5" cols="40" required></textarea><br><br>
+
+        <button type="submit">Kirim</button>
+    </form>
     </main>
 </body>
 
